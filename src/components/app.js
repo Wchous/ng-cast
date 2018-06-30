@@ -1,5 +1,9 @@
-angular.module('video-player')
+var app = angular.module('video-player', [])
+  .component('app', {
+    templateUrl: 'src/templates/app.html',
+    controller: function() {
+      this.videos = window.exampleVideoData;
+    }
+  });
 
-.component('app', {
-  // TODO
-});
+
