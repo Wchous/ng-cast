@@ -11,23 +11,13 @@ var app = angular.module('video-player', [])
       this.videos = window.exampleVideoData;
       
       this.selectVideo = function(video){
-        console.log(this)
-        this.nowplaying = video
-      }
+        console.log(this);
+        this.nowplaying = video;
+      };
       
-      this.nowplaying = this.videos[0]
-      this.selectVideo = this.selectVideo.bind(this)
-      //   let spliced = window.exampleVideoData.filter(function(elem){
-      //     if(elem.snippet.title === $event){
-      //       return elem
-      //     }
-      //   })
-      //   this.videos.splice(indexOf(spliced))
-      //   this.videos.unshift(spliced)
-      // }
-     
-        console.log('clicked');
+      this.nowplaying = this.videos[0];
+      this.selectVideo = this.selectVideo.bind(this);
+      
+    
     }
   });
-
-
