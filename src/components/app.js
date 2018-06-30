@@ -10,7 +10,13 @@ var app = angular.module('video-player', [])
     controller: function() {
       this.videos = window.exampleVideoData;
       
-      this.selectVideo = function(){
+      this.selectVideo = function(video){
+        console.log(this)
+        this.nowplaying = video
+      }
+      
+      this.nowplaying = this.videos[0]
+      this.selectVideo = this.selectVideo.bind(this)
       //   let spliced = window.exampleVideoData.filter(function(elem){
       //     if(elem.snippet.title === $event){
       //       return elem
@@ -21,7 +27,6 @@ var app = angular.module('video-player', [])
       // }
      
         console.log('clicked');
-      };
     }
   });
 

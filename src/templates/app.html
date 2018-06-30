@@ -6,10 +6,10 @@
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player played="$ctrl.videos[0]" ></video-player>
+      <video-player played="$ctrl.nowplaying" ></video-player>
     </div>
     <div class="col-md-5">
-      <video-list videos="$ctrl.videos" select = "$ctrl.selectVideo" >
+      <video-list videos="$ctrl.videos" on-click = "$ctrl.selectVideo" >
       </video-list>
     </div>
   <div>
