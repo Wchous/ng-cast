@@ -3,6 +3,8 @@ angular.module('video-player')
     bindings: {
       item: '<'
     },
+
+  
     templateUrl: 'src/templates/videoListEntry.html'
-  });
+  }); 
  
